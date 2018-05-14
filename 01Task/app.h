@@ -8,7 +8,8 @@ extern "C" {
 
 #ifndef TOPPERS_MACRO_ONLY
 
-extern void	sub_task(intptr_t exinf);
+extern void	task1(intptr_t exinf);
+extern void	task2(intptr_t exinf);
 
 #endif /* TOPPERS_MACRO_ONLY */
 
