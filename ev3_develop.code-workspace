@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"terminal.integrated.env.windows": {
+			"CHERE_INVOKING": "1"
+		},
+		"terminal.integrated.setLocaleVariables": true,
+		"terminal.integrated.shell.windows": "C:\\cygwin64\\bin\\bash.exe",
+		"terminal.integrated.shellArgs.windows": [
+			"-li"
+		],
+	}
+}
+

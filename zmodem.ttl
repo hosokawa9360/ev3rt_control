@@ -1,0 +1,7 @@
+messagebox "EV3‚Ì“dŒ¹‚ð“ü‚ê‚Ä‚­‚¾‚³‚¢" "‹N“®"
+connect '/C=4'
+messagebox "load=>Bluetooth SPP‚É‚µ‚Ä‚­‚¾‚³‚¢" "“]‘—"
+zmodemsend 'C:\cygwin64\home\hosokawa\hrp2\sdk\workspace\app' 1
+disconnect
+closett
+end
