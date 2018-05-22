@@ -13,6 +13,12 @@
 		"terminal.integrated.shellArgs.windows": [
 			"-li"
 		],
-	}
+	},
+	"extensions": {
+		
+        "recommendations": [
+            "ms-vscode.cpptools"
+        ]
+    }
 }
 
