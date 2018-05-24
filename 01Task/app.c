@@ -13,7 +13,7 @@ void task1(intptr_t unused) {
     ev3_lcd_draw_string(m, 20 ,20);
 	tslp_tsk(100);
 	}
-   //ext_tsk();
+   ext_tsk();
 }
 
 void task2(intptr_t unused) {
