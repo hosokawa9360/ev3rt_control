@@ -1,14 +1,13 @@
 #include "ev3api.h"
 #include "app.h"
 #include "Port.h"
-//#include "..\..\..\arch\arm_gcc\common\arm_tools.h"
 #include "ColorSensor.h"
 #include "TouchSensor.h"
 
 using namespace ev3api;
 
-TouchSensor touch(PORT_1);
-ColorSensor color(PORT_2);
+TouchSensor *touch;
+ColorSensor *color;
 
 void main_task(intptr_t unused)
 {
@@ -18,12 +17,15 @@ void main_task(intptr_t unused)
 	rgb_raw_t rgb_val;
 
 	ev3_lcd_set_font(EV3_FONT_MEDIUM);
-	ev3_lcd_draw_string("Touch PG!!", 20, 20);
+	ev3_lcd_draw_string("Color PG!!", 20, 20);
 	
-	while (touch.isPressed() == false){
-		lightPower = color.getBrightness();
-		colorId = color.getColorNumber();
-		color.getRawColor(rgb_val);
+	touch = new TouchSensor(PORT_1);
+	color = new ColorSensor(PORT_2);
+
+	while (touch->isPressed() == false){
+		lightPower = color->getBrightness();
+		colorId = color->getColorNumber();
+		color->getRawColor(rgb_val);
 
 		sprintf(msg1,"Power:%3d",lightPower);
 		sprintf(msg2,"ColorId:%3d", colorId);
@@ -32,8 +34,8 @@ void main_task(intptr_t unused)
 		ev3_lcd_draw_string(msg2, 20, 40);
 		ev3_lcd_draw_string(msg3, 20, 60);
 	}	
-	ev3_lcd_draw_string("Stop!!", 20, 60);
-	//delete(color);
-	//delete(touch);
+	ev3_lcd_draw_string("Stop!!", 20, 100);
+	delete(color);
+	delete(touch);
 	ext_tsk();
 }

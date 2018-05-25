@@ -1,6 +1,6 @@
 APPL_COBJS += 
 
-APPL_CXXOBJS += "TouchSenser.o"
+APPL_CXXOBJS += 
 
 SRCLANG := c++
 
