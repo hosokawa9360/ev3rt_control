@@ -1,6 +1,6 @@
 {
     "configurations": [{
-        "name": "Win32",
+        "name": "Linux",
         "browse": {
             "path": [
                 "${workspaceFolder}"
@@ -8,29 +8,9 @@
             "limitSymbolsToIncludedHeaders": true
         },
         "includePath": [
-            "C:\\Program Files (x86)\\GNU Tools ARM Embedded\\5.4 2016q3\\arm-none-eabi\\include\\c++\\5.4.1\\arm-none-eabi",
-            "C:\\Program Files (x86)\\GNU Tools ARM Embedded\\5.4 2016q3\\arm-none-eabi\\include\\c++\\5.4.1\\backward",
-            "C:\\Program Files (x86)\\GNU Tools ARM Embedded\\5.4 2016q3\\arm-none-eabi\\include",
-            "C:\\Program Files (x86)\\GNU Tools ARM Embedded\\5.4 2016q3\\lib\\gcc\\arm-none-eabi\\5.4.1\\include",
-            "C:\\Program Files (x86)\\GNU Tools ARM Embedded\\5.4 2016q3\\lib\\gcc\\arm-none-eabi\\5.4.1\\include-fixed",
-            "C:\\cygwin64\\home\\hosokawa\\hrp2\\sdk\\common\\ev3api\\include",
-            "C:\\cygwin64\\home\\hosokawa\\hrp2\\sdk\\common\\ev3api\\src",
-            "C:\\cygwin64\\home\\hosokawa\\hrp2\\sdk\\common\\library\\libcpp-ev3\\include",
-            "C:\\cygwin64\\home\\hosokawa\\hrp2\\sdk\\common\\library\\libcpp-test\\include",
-            "C:\\cygwin64\\home\\hosokawa\\hrp2\\arch\\arm_gcc\\common",
-            "C:\\cygwin64\\home\\hosokawa\\hrp2\\target\\ev3_gcc",
-            "C:\\cygwin64\\home\\hosokawa\\hrp2\\include",
-            "C:\\cygwin64\\home\\hosokawa\\hrp2\\arch",
-            "C:\\cygwin64\\home\\hosokawa\\hrp2\\arch\\gcc",
-            "C:\\cygwin64\\home\\hosokawa\\hrp2\\arch\\gcc\\tol_svc.h",
-            "C:\\cygwin64\\home\\hosokawa\\hrp2\\extension\\dcre\\arch\\gcc",
-            "C:\\cygwin64\\home\\hosokawa\\hrp2\\arch\\arm_cdgcc\\common",
-            "C:\\cygwin64\\home\\hosokawa\\hrp2\\arch\\arm_gcc\\am1808",
-            "C:\\cygwin64\\home\\hosokawa\\hrp2\\sdk\\my_include",
+            "C:\\cygwin64\\home\\hosokawa\\hrp2\\**",
             "C:\\cygwin64\\lib\\gcc\\x86_64-pc-cygwin\\7.3.0\\include",
-            "C:\\cygwin64\\home\\hosokawa\\hrp2\\base-workspace\\OBJ",
             "C:\\cygwin64\\usr\\include",
-           
             "${workspaceFolder}"
         ],
         "defines": [
@@ -40,7 +20,7 @@
         ],
         "cStandard": "c11",
         "cppStandard": "c++17",
-        "intelliSenseMode": "msvc-x64"
+        "intelliSenseMode": "clang-x64"
     }],
     "version": 4
 }
