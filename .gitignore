@@ -1,1 +1,5 @@
 /.metadata/
+app
+.vscode
+.settings
+.metadata

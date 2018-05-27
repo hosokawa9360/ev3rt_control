@@ -2,8 +2,7 @@ mkfile_path := $(dir $(lastword $(MAKEFILE_LIST)))
 
 APPL_COBJS +=
 
-APPL_CXXOBJS += \
-	util.o
+APPL_CXXOBJS += 
 
 SRCLANG := c++
 
@@ -16,4 +15,8 @@ endif
 
 APPL_DIR += $(mkfile_path)app $(mkfile_path)unit
 
-# COPTS += -fno-use-cxa-atexit
+INCLUDES += \
+	-I$(mkfile_path)app \
+	-I$(mkfile_path)unit
+
+COPTS += -fno-use-cxa-atexit
