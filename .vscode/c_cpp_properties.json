@@ -8,9 +8,14 @@
             "limitSymbolsToIncludedHeaders": true
         },
         "includePath": [
-            "C:\\cygwin64\\home\\hosokawa\\hrp2\\**",
-            "C:\\cygwin64\\lib\\gcc\\x86_64-pc-cygwin\\7.3.0\\include",
             "C:\\cygwin64\\usr\\include",
+            "C:\\cygwin64\\lib\\gcc\\x86_64-pc-cygwin\\7.3.0\\include",
+            "C:\\cygwin64\\home\\hosokawa\\hrp2\\sdk\\common\\**",
+            "C:\\cygwin64\\home\\hosokawa\\hrp2\\target\\ev3_gcc",
+            "C:\\cygwin64\\home\\hosokawa\\hrp2\\include",
+            "C:\\cygwin64\\home\\hosokawa\\hrp2\\arch\\**",
+            "C:\\cygwin64\\home\\hosokawa\\hrp2\\sdk\\my_include",
+            "C:\\cygwin64\\home\\hosokawa\\hrp2\\base-workspace\\OBJ",
             "${workspaceFolder}"
         ],
         "defines": [
