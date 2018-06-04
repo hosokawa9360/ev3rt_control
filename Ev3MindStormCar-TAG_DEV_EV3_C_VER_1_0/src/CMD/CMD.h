@@ -12,7 +12,7 @@
 #define CMD_ERROR_CMD_DATA_LEN      (0xFE)
 #define CMD_ERROR_INVALID_SUB_CODE  (0xFD)
 #define CMD_ERROR_INVALID_CMD_DATA  (0xFC)
-#define CMD_WARN_NO_DEVICE_CONN     (0xEF)//デバイス未接続エラー
+#define CMD_WARN_NO_DEVICE_CONN     (0xEF)//繝�繝舌う繧ｹ譛ｪ謗･邯壹お繝ｩ繝ｼ
 
 //Enumlator of command data fomrat.
 enum {

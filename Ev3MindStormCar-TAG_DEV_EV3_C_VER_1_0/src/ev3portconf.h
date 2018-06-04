@@ -3,12 +3,12 @@
 #include "ev3api.h"
 
 /*
- *  �f�o�C�X�ƃ|�[�g�̐ݒ�
+ *  デバイスとポートの設定
  */
 /**
- *  ���̓|�[�g�`�����l���̐ݒ�(2�`4)
- *  ���|�[�g1�́AUART�|�[�g�ɂȂ��Ă���APC�Ȃǂ̃f�o�C�X�ƃV���A���ʐM��
- *    ���邽�߂Ɏg�p����\�������邽�߁B
+ *  入力ポートチャンネルの設定(2～4)
+ *  ※ポート1は、UARTポートになっており、PCなどのデバイスとシリアル通信を
+ *    するために使用する可能性があるため。
  */
 #define SONIC_SENSOR_PORT   (EV3_PORT_3)
 #define TOUCH_SENSOR_PORT   (EV3_PORT_2)
@@ -16,7 +16,7 @@
 #define GYRO_SENSOR_PORT    (EV3_PORT_1)
 
 /**
- *  �o�̓|�[�g�`�����l���̐ݒ�(A�`D)
+ *  出力ポートチャンネルの設定(A～D)
  */
 #define RIGHT_MOTOR_PORT    (EV3_PORT_D)
 #define LTYPE_MOTOR_PORT    (EV3_PORT_B)

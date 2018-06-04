@@ -1,3 +1,6 @@
+// 61LineTrace2_EX2
+// ロギングプログラム実装
+
 #include <string.h>
 #include <stdio.h>
 #include "app.h"

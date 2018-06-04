@@ -7,16 +7,16 @@ extern int limit_int(int value, int min, int max);
 
 /**
  *  @macro
- *  ƒoƒbƒtƒ@[‚Ì‰Šú‰»‚ðs‚¤B
- *  ƒoƒbƒtƒ@[‚ÌƒCƒ“ƒfƒbƒNƒX‚ðŽ¦‚·•Ï”‚ðA‘æ1ˆø”‚ÉŽw’è‚·‚éB
- *  val‚ÅA‰Šú’l(‰Šú‰»‚·‚é’l)‚ðŽw’è‚·‚éB
+ *  ãƒãƒƒãƒ•ã‚¡ãƒ¼ã®åˆæœŸåŒ–ã‚’è¡Œã†ã€‚
+ *  ãƒãƒƒãƒ•ã‚¡ãƒ¼ã®ã‚¤ãƒ³ãƒ‡ãƒƒã‚¯ã‚¹ã‚’ç¤ºã™å¤‰æ•°ã‚’ã€ç¬¬1å¼•æ•°ã«æŒ‡å®šã™ã‚‹ã€‚
+ *  valã§ã€åˆæœŸå€¤(åˆæœŸåŒ–ã™ã‚‹å€¤)ã‚’æŒ‡å®šã™ã‚‹ã€‚
  */
 #define INIT_BUF_VAL(size, buff, val)    init_buff(size, buff, val)
 
 /**
  *  @macro
- *  ƒoƒbƒtƒ@[‚Ì‰Šú‰»‚ðs‚¤B
- *  ƒoƒbƒtƒ@[‚ÌƒCƒ“ƒfƒbƒNƒX‚ðŽ¦‚·•Ï”‚ðA‘æ1ˆø”‚ÉŽw’è‚·‚éB
- *  ƒoƒbƒtƒ@[‚ÍA‘S‚Äu0v‚Å‰Šú‰»‚·‚éB
+ *  ãƒãƒƒãƒ•ã‚¡ãƒ¼ã®åˆæœŸåŒ–ã‚’è¡Œã†ã€‚
+ *  ãƒãƒƒãƒ•ã‚¡ãƒ¼ã®ã‚¤ãƒ³ãƒ‡ãƒƒã‚¯ã‚¹ã‚’ç¤ºã™å¤‰æ•°ã‚’ã€ç¬¬1å¼•æ•°ã«æŒ‡å®šã™ã‚‹ã€‚
+ *  ãƒãƒƒãƒ•ã‚¡ãƒ¼ã¯ã€å…¨ã¦ã€Œ0ã€ã§åˆæœŸåŒ–ã™ã‚‹ã€‚
  */
 #define INIT_BUF(size, buff) INIT_BUF_VAL(size, buff, 0)

@@ -16,8 +16,8 @@ Motor *motorL = new Motor(PORT_B);//左モーター
 
 //ColorSensor *color= new ColorSensor(PORT_2);
 
-#define ANGLE_OF_AIM 360*5 //目的の角度
-#define PW_MAX1 20 //ローギヤ
+#define ANGLE_OF_AIM 360 //目的の角度
+#define PW_MAX1 50 //ローギヤ
 #define PW_MAX2 50  //ハイギア
 
 int Pid(float kp, float ki, float kd) { //PID制御関数
@@ -69,13 +69,16 @@ void main_task(intptr_t unused)
 	motorL->reset();
 
 	float speed;
-	while (1)
+	while ( motorR->getCount() < ANGLE_OF_AIM +45 )
 	{
 		speed = Pid(0.7 ,0.3 , 0.03);
 		motorR->setPWM(speed);
 		motorL->setPWM(speed);
 		tslp_tsk(1);
 	}
+	motorR->stop();
+	motorL->stop();
+
 	delete (motorR);
 	delete (motorL);
 	//delete (color);

@@ -1,6 +1,6 @@
 mkfile_path := $(dir $(lastword $(MAKEFILE_LIST)))
 APPL_COBJS +=
-APPL_CXXOBJS += 
+APPL_CXXOBJS += TSK_Bt.o
 SRCLANG := c++
 ifdef CONFIG_EV3RT_APPLICATION
 # Include libraries

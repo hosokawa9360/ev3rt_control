@@ -13,6 +13,9 @@
 		"terminal.integrated.shellArgs.windows": [
 			"-li"
 		],
+		"files.associations": {
+			"tsk_phase.h": "c"
+		},
 	},
 	"extensions": {
 		
