@@ -6,13 +6,17 @@ extern TouchSensor *touch;
 
 Pid :: Pid()
 {
-    color = new ColorSensor(PORT_1);
+    color = new ColorSensor(PORT_2);
     kp = 0.7;
     ki = 0.3;
     kd = 0.03;
     middle_light = (MAX_LIGHT + MIN_LIGHT) / 2.0;
     motorFlg = 0;
 }
+Pid :: ~Pid(){
+    //delete (color);
+    //delete (touch);
+} //デストラクタ
 
 void Pid::setPid(float _kp, float _ki, float _kd)
 { //PID計数をセット
@@ -59,6 +63,8 @@ void Pid::InitPid(void)
 	int black_Brightness=0;
     int white_Brightness=0;
 	
+    ev3_lcd_draw_string("Scan Go!", 20, 10);
+
     while (touch->isPressed() == false)
 	{
 		white_Brightness = color->getBrightness();

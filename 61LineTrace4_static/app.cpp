@@ -17,7 +17,7 @@ float middle_light;
 
 Motor *motorR = new Motor(PORT_A);
 Motor *motorL = new Motor(PORT_B);
-ColorSensor *color = new ColorSensor(PORT_2);
+//ColorSensor *color = new ColorSensor(PORT_2);
 TouchSensor *touch = new TouchSensor(PORT_1);
 //Pid *pid = new Pid();
 Pid pid;
@@ -25,7 +25,7 @@ void main_task(intptr_t unused)
 {
 	//pid->setPid(0.5, 0.3, 0.03);
 	pid.setPid(0.5, 0.3, 0.03);
-	//pid->InitPid();
+	pid.InitPid();
 
 	motorR->reset();
 	motorL->reset();
@@ -54,6 +54,6 @@ void main_task(intptr_t unused)
 	ev3_lcd_draw_string("Stop!       ", 10, 55);
 	delete (motorR);
 	delete (motorL);
-	delete (color);
+//	delete (color);
 	ext_tsk();
 }

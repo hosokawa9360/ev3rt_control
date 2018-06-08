@@ -12,7 +12,10 @@ Motor *motorL = new Motor(PORT_B);
 ColorSensor *color = new ColorSensor(PORT_2);
 TouchSensor *touch = new TouchSensor(PORT_1);
 
-#define BASE_SPEED 20 //ベーススピード
+#define BASE_SPEED 15 //ベーススピード
+#define KP 0.675
+#define KD 0.225
+#define KI 0.003
 
 int white_Brightness;
 int black_Brightness;
@@ -101,7 +104,7 @@ void main_task(intptr_t unused)
 	ev3_lcd_draw_string("Go!       ", 10, 55);
 	while (touch->isPressed() == false)
 	{
-		Pid(0.7, 0.3, 0.03);
+		Pid(KP, KD, KI);
 		tslp_tsk(1); //制御を一度OSに戻す
 	}
 	ev3_lcd_draw_string("Stop!       ", 10, 55);

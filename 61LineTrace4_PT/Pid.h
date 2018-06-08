@@ -25,4 +25,5 @@ public:
   short getDirection();             //方向取得
   int CalcPid();                    //Pid計算
   void InitPid();                   //タッチを利用した白黒輝度取得
+  ~Pid(); //デストラクタ
 };
